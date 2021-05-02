@@ -1,13 +1,11 @@
-import Thumbnail from './Thumbnail'
+import Thumbnail from "./Thumbnail";
 
-export default function results({requests}) {
-    return (
-        <div>
-            {
-                requests.map((el) =>(
-                    <Thumbnail key={el.id} result={el} />
-                ))
-            }
-        </div>
-    )
+export default function results({ requests }) {
+  return (
+    <div className="px-5 my-10 sm:grid md:grid-cols-2 xl:grid-cols-3 3xl:flex flex-wrap justify-center ">
+      {requests.map((el) => (
+        <Thumbnail key={el.id} result={el} />
+      ))}
+    </div>
+  );
 }

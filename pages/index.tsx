@@ -7,7 +7,6 @@ import axios from "axios";
 
 export default function Home({ results }) {
 
-  console.log(results)
   return (
     <div>
       <Head>
