@@ -25,7 +25,6 @@ export default function header() {
         width={200}
         height={100}
       />
-      Hello
     </header>
   );
 }
